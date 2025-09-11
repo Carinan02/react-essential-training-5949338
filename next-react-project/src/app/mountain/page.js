@@ -1,7 +1,5 @@
 async function getData() {
-  const res = await fetch(
-    "https://snowtooth-api-rest.fly.dev"
-  );
+  const res = await fetch("https://snowtooth-api-rest.fly.dev");
   return res.json();
 }
 
@@ -9,7 +7,7 @@ export default async function Page() {
   const data = await getData();
   return (
     <main>
-      <h1>Lift Status Info</h1>
+      <h1>Lift Status info</h1>
       <table>
         <thead>
           <tr>
